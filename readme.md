@@ -61,8 +61,8 @@ El servicio proporciona una **API REST** que devuelve datos en formato **JSON**.
 
    1. **Compilar el proyecto:**
       - Ejecuta el script correspondiente según tu sistema operativo:
-      - **Windows:** Ejecuta el script `compilar_p2.bat`.
-      - **Linux:** Ejecuta el script `compilar_p2.sh`.
+        - **Windows:** Ejecuta el script `compilar_p2.bat`.
+        - **Linux:** Ejecuta el script `compilar_p2.sh`.
 
    2. **Iniciar el servidor Apache Tomcat:**
       - Asegúrate de tener **Apache Tomcat 10** configurado correctamente, con el contexto bien creado que apunte e la carpeta webapps dentro de public_html.
@@ -128,8 +128,8 @@ Reimplementar la **P2** utilizando el patrón de arquitectura **Modelo-Vista-Con
 
    1. **Compilar el proyecto:**
       - Ejecuta el script correspondiente según tu sistema operativo:
-      - **Windows:** Ejecuta el script `compilar_p3.bat`.
-      - **Linux:** Ejecuta el script `compilar_p3.sh`.
+        - **Windows:** Ejecuta el script `compilar_p3.bat`.
+        - **Linux:** Ejecuta el script `compilar_p3.sh`.
 
    2. **Iniciar el servidor Apache Tomcat:**
       - Asegúrate de tener **Apache Tomcat 10** configurado correctamente, con el contexto bien creado que apunte e la carpeta webapps dentro de public_html.
