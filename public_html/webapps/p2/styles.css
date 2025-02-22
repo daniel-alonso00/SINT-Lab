@@ -1,0 +1,26 @@
+/*Hoja de estilos de la practica 2*/
+body {
+    margin: 20px;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: linear-gradient(to right, #d099f5, #ffffff);
+
+}
+#boton_Inicio{
+    background-color: rgb(207, 84, 255);
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#boton_Anterior{
+    background-color: rgb(97, 133, 233);
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.botones{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+

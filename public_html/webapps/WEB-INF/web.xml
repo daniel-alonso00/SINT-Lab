@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app 
+          PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app version="2.4">
+     <display-name>ServletSimple </display-name>
+     <description> Servlet muy simple </description>
+      <servlet>
+           <servlet-name>screensP2</servlet-name>
+           <servlet-class> p2.Sint2P2 </servlet-class>
+     </servlet>
+
+     <servlet>
+           <servlet-name>API</servlet-name>
+           <servlet-class> p2.Sint2P2 </servlet-class>
+     </servlet>
+
+     <servlet>
+           <servlet-name>screensP3</servlet-name>
+           <servlet-class> p3.Sint2P3 </servlet-class>
+     </servlet>
+
+
+      <servlet-mapping>
+           <servlet-name>screensP2</servlet-name>
+           <url-pattern> /P2M </url-pattern>   
+      </servlet-mapping>
+
+      <servlet-mapping>
+           <servlet-name>API</servlet-name>
+           <url-pattern> /P2M/v1/* </url-pattern>   
+      </servlet-mapping>
+
+      <servlet-mapping>
+           <servlet-name>screensP3</servlet-name>
+           <url-pattern> /P3M </url-pattern>   
+      </servlet-mapping>
+
+</web-app>
