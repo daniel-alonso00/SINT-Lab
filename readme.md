@@ -55,21 +55,29 @@ El servicio proporciona una **API REST** que devuelve datos en formato **JSON**.
      `GET /sint/P2M/v1/cast/{id}/movies`  
      Parámetro: `id` (ID del actor/actriz).
 
-### 🔧 **Instrucciones de ejecución**
-1. Configura un servidor **Apache Tomcat** (versión 10).
-2. Despliega el proyecto en el contexto `sint` e inicializa el servicio de **Apache Tomcat**.
-3. Accede al servicio a través de la URL:  
-   `http://localhost:6000/sint/P2M`
+### 🔧 **Instrucciones de acceso a la P2**
+
+   Para acceder al servicio gráfico de la **P2: Servicio de Consulta de Películas**, sigue estos pasos:
+
+   1. **Compilar el proyecto:**
+      - Ejecuta el script correspondiente según tu sistema operativo:
+      - **Windows:** Ejecuta el script `compilar_p2.bat`.
+      - **Linux:** Ejecuta el script `compilar_p2.sh`.
+
+   2. **Iniciar el servidor Apache Tomcat:**
+      - Asegúrate de tener **Apache Tomcat 10** configurado correctamente, con el contexto bien creado que apunte e la carpeta webapps dentro de public_html.
+      - Inicia el servidor **Tomcat**: acceder a \apache-tomcat-10.0.26\bin y ejecutar: `startup.bat` en caso de Windows, o `startup.sh` en caso de Linux
+      - Para detener el servidor despues de su uso ejecutamos: `shutdown.bat` en caso de Windows o `shutdown.sh` en Linux.
+
+   3. **Acceder al servicio:**
+      - Abre un navegador web y accede al siguiente enlace para el servicio gráfico de la aplicación:
+      - `http://localhost:8080/sint/P2M`
+
 
 ### 📜 **Scripts de compilación y despliegue**
 - **Windows:** Ejecuta el script `compilar_p2.bat` para compilar y desplegar automáticamente los archivos.
 - **Linux:** Ejecuta el script `compilar_p2.sh` para compilar y desplegar automáticamente los archivos.
 
----
-
-Claro, aquí tienes la sección de la **P3** adaptada siguiendo el estilo y formato de la **P2**, sin incluir la parte de la API REST:
-
----
 
 ## 🔄 **P3: Reimplementación de la P2 usando MVC**
 
@@ -114,11 +122,24 @@ Reimplementar la **P2** utilizando el patrón de arquitectura **Modelo-Vista-Con
 ├── README.md
 ```
 
-### 🔧 **Instrucciones de ejecución**
-1. Configura un servidor **Apache Tomcat** (versión 10).
-2. Despliega el proyecto en el contexto `sint`.
-3. Accede al servicio a través de la URL:  
-   `http://localhost:6000/sint/P3M`
+### 🔧 **Instrucciones de acceso a la P2**
+
+   Para acceder al servicio gráfico de la **P2: Servicio de Consulta de Películas**, sigue estos pasos:
+
+   1. **Compilar el proyecto:**
+      - Ejecuta el script correspondiente según tu sistema operativo:
+      - **Windows:** Ejecuta el script `compilar_p3.bat`.
+      - **Linux:** Ejecuta el script `compilar_p3.sh`.
+
+   2. **Iniciar el servidor Apache Tomcat:**
+      - Asegúrate de tener **Apache Tomcat 10** configurado correctamente, con el contexto bien creado que apunte e la carpeta webapps dentro de public_html.
+      - Inicia el servidor **Tomcat**: acceder a \apache-tomcat-10.0.26\bin y ejecutar: `startup.bat` en caso de Windows, o `startup.sh` en caso de Linux
+      - Para detener el servidor despues de su uso ejecutamos: `shutdown.bat` en caso de Windows o `shutdown.sh` en Linux.
+
+   3. **Acceder al servicio:**
+      - Abre un navegador web y accede al siguiente enlace para el servicio gráfico de la aplicación:
+      - `http://localhost:8080/sint/P3M`
+
 
 ### 📜 **Scripts de compilación y despliegue**
 - **Windows:** Ejecuta el script `compilar_p3.bat` para compilar y desplegar automáticamente los archivos.
