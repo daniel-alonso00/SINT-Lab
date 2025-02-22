@@ -7,17 +7,17 @@
      <description> Servlet muy simple </description>
       <servlet>
            <servlet-name>screensP2</servlet-name>
-           <servlet-class> p2.Sint2P2 </servlet-class>
+           <servlet-class> p2.sintP2 </servlet-class>
      </servlet>
 
      <servlet>
            <servlet-name>API</servlet-name>
-           <servlet-class> p2.Sint2P2 </servlet-class>
+           <servlet-class> p2.sintP2 </servlet-class>
      </servlet>
 
      <servlet>
            <servlet-name>screensP3</servlet-name>
-           <servlet-class> p3.Sint2P3 </servlet-class>
+           <servlet-class> p3.sintP3 </servlet-class>
      </servlet>
 
 

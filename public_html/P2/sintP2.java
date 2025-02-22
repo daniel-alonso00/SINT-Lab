@@ -14,7 +14,7 @@ import jakarta.servlet.annotation.*;
 
 import org.json.*;
 
-public class Sint2P2 extends HttpServlet {
+public class sintP2 extends HttpServlet {
 
     private DataModel miDataModel;
     private FrontEnd miFrontEnd;
@@ -42,7 +42,7 @@ public class Sint2P2 extends HttpServlet {
         String fase = req.getParameter("pphase");
         String reqURL = req.getRequestURI();    //Sacamos los parametros de la URL
 
-        if(reqURL.equals("/sint2/P2M")){    //Si tenemos P2M entramos en la consulta de peliculas
+        if(reqURL.equals("/sint/P2M")){    //Si tenemos P2M entramos en la consulta de peliculas
 
             if((fase == null)||(fase.equals("0"))) {           //CUANDO ES FASE0
 
@@ -74,20 +74,20 @@ public class Sint2P2 extends HttpServlet {
             }
 
         }else{  //ENTRAMOS EN LA API
-            if(reqURL.equals("/sint2/P2M/v1/langs")){   //SOLICITAMOS UNA LISTA DE IDIOMAS
+            if(reqURL.equals("/sint/P2M/v1/langs")){   //SOLICITAMOS UNA LISTA DE IDIOMAS
                 
                 ArrayList<String> langs = miDataModel.getLangs();
                 FrontEnd.APIlangs(req,res,langs);
 
 
-            }else if(reqURL.equals("/sint2/P2M/v1/cast")) {    //SOLICITAMOS UNA LISTA DE CAST SEGUN IDIOMA
+            }else if(reqURL.equals("/sint/P2M/v1/cast")) {    //SOLICITAMOS UNA LISTA DE CAST SEGUN IDIOMA
 
                 String lang = req.getParameter("lang");
                 ArrayList<Cast> cast = miDataModel.getCast(lang);   //sacamos la lista del cast de ese idioma
 
                 FrontEnd.APIcast(req,res,cast);
       
-            }else if(reqURL.matches("/sint2/P2M/v1/cast/.*/movies")){     //SOLICITAMOS LAS PELICULAS DE UN ACTOR
+            }else if(reqURL.matches("/sint/P2M/v1/cast/.*/movies")){     //SOLICITAMOS LAS PELICULAS DE UN ACTOR
                 //en este caso unamos la funcion matches por que con equals tiene que ser la cadena exactamente igual peor con esta no hace falta
 
                 String[] parts = reqURL.split("/");

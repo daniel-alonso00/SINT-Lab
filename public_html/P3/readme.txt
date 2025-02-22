@@ -1,4 +1,4 @@
-sint2
+sint
 Daniel Alonso Fernández
 
 Los ficheros de fases JSP estan dentro de webapps en una carpeta p3, junto con el styles.css

@@ -23,12 +23,12 @@
     <br>
 
     <!-- Botón para volver al inicio -->
-    <form action="/sint2/P3M" method="get" class="botones">
+    <form action="/sint/P3M" method="get" class="botones">
         <input type="submit" value="Inicio" id="boton_inicio">
     </form>
 
     <!-- Botón para volver a la fase anterior -->
-    <form action="/sint2/P3M" method="get" class="botones">
+    <form action="/sint/P3M" method="get" class="botones">
         <input type="hidden" name="pphase" value="2">
         <input type="hidden" name="plang" value="${bean.plang}">
         <input type="submit" value="Anterior" id="boton_anterior">

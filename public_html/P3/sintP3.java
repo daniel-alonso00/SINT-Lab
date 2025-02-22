@@ -8,7 +8,7 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-public class Sint2P3 extends HttpServlet {
+public class sintP3 extends HttpServlet {
 
     private DataModel miDataModel;
     private String URLxmlFile= "https://luis.sabucedo.webs.uvigo.es/24-25/p2/mml.xml";
@@ -32,7 +32,7 @@ public class Sint2P3 extends HttpServlet {
         String fase = req.getParameter("pphase");
         String reqURL = req.getRequestURI();    //Sacamos los parametros de la URL
 
-        if(reqURL.equals("/sint2/P3M")){    //Si tenemos P3M entramos en la consulta de peliculas
+        if(reqURL.equals("/sint/P3M")){    //Si tenemos P3M entramos en la consulta de peliculas
 
             if((fase == null)||(fase.equals("0"))) {           //CUANDO ES FASE0
 

@@ -19,7 +19,7 @@
     <br>
     
     <!-- Formulario para regresar al inicio -->
-    <form action="/sint2/P3M" method="get" class="botones">
+    <form action="/sint/P3M" method="get" class="botones">
         <input type="submit" value="Inicio" id="boton_inicio">
     </form>
 

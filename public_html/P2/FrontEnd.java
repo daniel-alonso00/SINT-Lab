@@ -77,7 +77,7 @@ public class FrontEnd {
         out.println("<br>");
 
         //AGREGAMOS EL BOTON PARA VOLVER AL INICIO
-        out.println("<form action=\"/sint2/P2M\" method=\"get\" class=\"botones\">");
+        out.println("<form action=\"/sint/P2M\" method=\"get\" class=\"botones\">");
         out.println("<input type=\"submit\" value=\"Inicio\" id=\"boton_Inicio\">");
         out.println("</form>");
 
@@ -117,12 +117,12 @@ public class FrontEnd {
         out.println("<br>");
 
         //AGREGAMOS EL BOTON PARA VOLVER AL INICIO
-        out.println("<form action=\"/sint2/P2M\" method=\"get\" class=\"botones\">");
+        out.println("<form action=\"/sint/P2M\" method=\"get\" class=\"botones\">");
         out.println("<input type=\"submit\" value=\"Inicio\" id=\"boton_Inicio\">");
         out.println("</form>");
 
         //AGREGAMOS EL BOTON DE VOLVER A LA FASE ANTERIOR
-        out.println("<form action=\"/sint2/P2M\" method=\"get\" class=\"botones\">");
+        out.println("<form action=\"/sint/P2M\" method=\"get\" class=\"botones\">");
         out.println("<input type=\"hidden\" name=\"pphase\" value=\"1\">");
         out.println("<input type=\"submit\" value=\"Anterior\" id=\"boton_Anterior\">");
         out.println("</form>");
@@ -163,12 +163,12 @@ public class FrontEnd {
         out.println("<br>");
 
         //AGREGAMOS EL BOTON PARA VOLVER AL INICIO
-        out.println("<form action=\"/sint2/P2M\" method=\"get\" class=\"botones\">");
+        out.println("<form action=\"/sint/P2M\" method=\"get\" class=\"botones\">");
         out.println("<input type=\"submit\" value=\"Inicio\" id=\"boton_Inicio\">");
         out.println("</form>");
 
         //AGREGAMOS EL BOTON DE VOLVER A LA FASE ANTERIOR
-        out.println("<form action=\"/sint2/P2M\" method=\"get\" class=\"botones\">");
+        out.println("<form action=\"/sint/P2M\" method=\"get\" class=\"botones\">");
         out.println("<input type=\"hidden\" name=\"pphase\" value=\"2\">");
         out.println("<input type=\"hidden\" name=\"plang\" value=\""+lang+"\">");
         out.println("<input type=\"submit\" value=\"Anterior\" id=\"boton_Anterior\">");
